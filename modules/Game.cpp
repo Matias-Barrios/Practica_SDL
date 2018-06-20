@@ -1,5 +1,5 @@
 #include "Game.h"
-
+#include <SDL2/SDL.h>
 
 Game::Game()
 {
@@ -14,7 +14,6 @@ Game::~Game()
 
 bool Game::init(int x, int y, int WIN_WIDTH, int WIN_HEIGHT,bool fullscreen, char* title){
 
-
         SDL_Init(SDL_INIT_VIDEO);
 
 	    if ((  window = SDL_CreateWindow(title,x,y,WIN_WIDTH,WIN_HEIGHT,SDL_WINDOW_OPENGL) ) == NULL) {
@@ -28,6 +27,9 @@ bool Game::init(int x, int y, int WIN_WIDTH, int WIN_HEIGHT,bool fullscreen, cha
 
         return 0;
 
+}
+SDL_Renderer *Game::getRenderer(){
+    return renderer;
 }
 void Game::draw(){
         SDL_RenderClear(renderer);

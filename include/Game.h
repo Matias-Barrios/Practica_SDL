@@ -8,6 +8,7 @@ class Game
         Game();
         virtual ~Game();
         bool init(int x, int y, int WIN_WIDTH, int WIN_HEIGHT,bool fullscreen, char* title);
+        SDL_Renderer *getRenderer();
         void draw();
         void quit();
         bool running();
