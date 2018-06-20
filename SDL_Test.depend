@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1529462322 source:/home/matias/SDL_Practica/SDL_Test/modules/Game.cpp
+	"Game.h"
+
+1529462126 /home/matias/SDL_Practica/SDL_Test/include/Game.h
+	<SDL2/SDL.h>
+
