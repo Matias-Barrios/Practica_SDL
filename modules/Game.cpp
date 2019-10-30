@@ -45,6 +45,15 @@ bool Game::running(){
 
     return true;
 }
+void Game::draw_sprite(Drawable obj) {
+    SDL_Rect r;
+    r.x = obj.x;
+    r.y = obj.y;
+    r.w = obj.width;
+    r.h = obj.height;
+    SDL_RenderCopy(renderer, backgroundtexture, &r, NULL);
+}
+
 void Game::quit(){
 
     // Close and destroy the window

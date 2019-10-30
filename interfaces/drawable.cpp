@@ -1,13 +1,7 @@
- #include <vector>
- #include <SDL2/SDL.h>
+#include <vector>
+#include <SDL2/SDL.h>
+#include "drawable.h"
 
-class Drawable {
+void Drawable::load(){
 
-    public:
-        int x;
-        int y;
-        int width;
-        int height;
-        std::vector<SDL_Texture*> sprites;
-        
-};
+}
